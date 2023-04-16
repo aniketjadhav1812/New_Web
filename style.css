@@ -41,8 +41,9 @@ body{
     list-style: none;
     display: block;
     position: relative;
-    animation-name: slide;
-    animation-duration: 0.8s;
+    top: -110%;
+    transition: all ease-in 0.8s;
+    transition-delay: 0.5s ;
 }
 .sidebar .menu-btn{
     font-size: 20px;
@@ -51,6 +52,15 @@ body{
     margin: 56px;
     position: relative;
     transition: all 0.4s ease-in;
+}
+#side{
+    left: -100%;
+    transition: all 0.6s ease-in-out;
+}
+#menu{
+    left: 25px;
+    top: 25px;
+    transition: all ease-in-out 0.5s;
 }
 .sidebar .menu-btn:hover{
     cursor: pointer;
@@ -72,6 +82,22 @@ body{
     left: 10%;
     bottom: -6px;
     transition: all 0.4s ease-in;
+}#cross{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 25px;
+    color: aliceblue;
+    cursor: pointer;
+}
+#menu{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 25px;
+    color: aliceblue;
+    cursor: pointer;
+
 }
 #home{
     margin: 0px 30px ;

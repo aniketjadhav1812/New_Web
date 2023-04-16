@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>New Web</title>
+    <title>AJ_Blog</title>
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
+        <div id="menu" onclick="openmenu()"><i class="fa-solid fa-bars"></i></div>
+        <div class="sidebar" id="side">
             <nav>
-                <ul>
+
+                <div id="cross" onclick="closemenu()"><i class="fa-solid fa-xmark"></i></div>
+                <ul id="slide">
                     <li class="menu-btn active-btn" onclick="opentab('home')">Home</li>
                     <li class="menu-btn" onclick="opentab('about')">About</li>
                     <li class="menu-btn" onclick="opentab('skills')">Skills</li>
@@ -20,9 +23,10 @@
             </nav>
             </div>
             <div id="home" class=" tabs active">
-                <h1 class="text-1">HELLO, I'm <span id="text1"></span></h1>
-            
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, magni beatae sint rem, fugit minima qui omnis saepe possimus perferendis quo dolor aliquid veritatis, quae accusantium nemo necessitatibus sapiente pariatur in quod fugiat. Cumque!</p>
+                <h3>Hello, I'm </h3>
+                <h1>Aniket Jadhav</h1>
+                <h1 class="text-3">HELLO, I'm <span id="text1"></span></h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, magni beatae sint rem, fugit minima qui omnis saepe possimus perferendis quo dolor aliquid veritatis, quae accusantium nemo necessitatibus sapiente pariatur in quod fugiat. Cumque!</p>
             </div>
 
             <div id="about" class="tabs">
@@ -32,6 +36,7 @@
     </div>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/4f309e4907.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
