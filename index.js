@@ -10,14 +10,14 @@ var typed = new Typed('#text1', {
 const closemenu = () => {
     document.getElementById("side").style.left = "-100%";
     document.getElementById('menu').style.left = "25px";
-    document.getElementById('slide').style.top = "-100%";    
+    document.getElementById('slide').style.top = "-100vh";    
 
     
 }
 const openmenu = () => {
     document.getElementById('menu').style.left = "-100%";
     document.getElementById("side").style.left = "0%";
-    document.getElementById('slide').style.top = "0%";
+    document.getElementById('slide').style.top = "0";
 }
 
 
