@@ -41,7 +41,7 @@ body{
     list-style: none;
     display: block;
     position: relative;
-    top: -110%;
+    top: -110vh;
     transition: all 0.8s ease-in;
     transition-delay: 0.5s ;
 }
