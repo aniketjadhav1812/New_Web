@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: white;
+    background-color: black;
+    display: inline-block;
+    background-image: url('./back.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+}
+.sidebar{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.4), crimson) ;
+    width: 20vw;
+    height: 100vh;
+    position: relative;
+}
+.sidebar nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+.sidebar nav ul{
+    list-style: none;
+    display: block;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 0.8s;
+}
+.sidebar .menu-btn{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin: 56px;
+    position: relative;
+    transition: all 0.4s ease-in;
+}
+.sidebar .menu-btn:hover{
+    cursor: pointer;
+    color: cyan;
+}
+.menu-btn.active-btn{
+    color: aqua;
+    text-decoration: solid aqua;
+}
+.menu-btn.active-btn::after{
+    width: 80%;
+}
+.menu-btn::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: tomato;
+    left: 10%;
+    bottom: -6px;
+    transition: all 0.4s ease-in;
+}
+#home{
+    margin: 0px 30px ;
+    display: none;
+    flex-direction: column;
+}
+#home.active,
+#about.active{
+    display: flex;
+}
+#home h1 span{
+    color: yellow;
+}
+#about{
+    display: none;
+    flex-direction: column;
+    margin: 0px 30px;
+    height: 100%;
+    width: 100%;
+}
+#about h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
